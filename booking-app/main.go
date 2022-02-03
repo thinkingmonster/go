@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
@@ -35,12 +34,10 @@ func main() {
 		fmt.Printf("%v tickets are remaining for %v\n", remainingTickets, conferanceName)
 
 		fmt.Printf("Type of bookins is %T\n", bookings)
-		firstNames := []string{}
-		for index, booking := range bookings {
-			var names = strings.Fields(booking)
-			var firstName := names[0]
-		}
-		fmt.Printf("Here is slices: %v", bookings)
+		//firstNames := []string{}
+		//for index, booking := range bookings {
+		//	var names = strings.Fields(booking)
+		//	var firstName := names[0]
 	}
-
+	fmt.Print("Here is slices")
 }
