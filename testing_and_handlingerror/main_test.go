@@ -11,6 +11,7 @@ var tests = []struct {
 }{
 	{"valid-data", 100.0, 10.0, 10.0, false},
 	{"invalid-data", 100.0, 0, 0.0, true},
+	{"expect-5", 50.0, 5, 0.0, false},
 }
 
 func TestDivisor(t *testing.T) {
@@ -47,3 +48,6 @@ func TestDivisor(t *testing.T) {
 //	}
 //
 //}
+
+//Command to execute
+//// go test -coverprofile=coverage.out && go tool cover -html=coverage.out
